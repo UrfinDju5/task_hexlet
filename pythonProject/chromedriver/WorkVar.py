@@ -134,13 +134,15 @@ def take_data():
             df.loc[len(df)] = [question1, answer1, answer2, answer3, answer4, answer5]
         else:
             continue
+select_answer = driver.find_element(By.ID, "1").click()
 take_data()
-for i in range(9):
-    q = i + 2
-    number_question = str (q)
-    select_answer = driver.find_element(By.ID, number_question).click()
+for i in range(10):
     take_data()
-# Записываем данные в таблицу Excel
+    select_answer = driver.find_element(By.ID, "a1").click()
+    push_button = driver.find_element(By.ID, "submitAnswer").click()
+push_but = driver.find_element(By.ID, "submitExam").click()
+push_but2 = driver.find_element(By.ID, "continueExaming").click()
+# Записываем данные в таблицу Excel continueExaming
 df.to_excel('data.xlsx', index=False)
 print(df)
 time.sleep(10)
