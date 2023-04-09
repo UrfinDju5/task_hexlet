@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Результат теста:</h1>
+    <p>Имя: {{ name }}</p>
+    <p>Фамилия: {{ surname }}</p>
+    <p>Правильных ответов: {{ score }}/3</p>
+    <p>Дата и время: {{ date }}</p>
+  </body>
+</html>

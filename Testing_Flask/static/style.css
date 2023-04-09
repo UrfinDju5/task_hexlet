@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.mainmenu li.last {float: right;}
+
+  ul.mainmenu li a:hover {
+    color: #fdc073;
+    text-decoration: none;
+  }
+
+  ul.mainmenu li a:hover {
+    color: #fda83d;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"], button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover, button:hover {
+    background-color: #3e8e41;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 2px;
+    vertical-align: middle;
+  }
+  
+  input[type="radio"]:checked + label::before, input[type="checkbox"]:checked + label::before {
+    content: '\2714';
+    display: inline-block;
+    font-size: 14px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  

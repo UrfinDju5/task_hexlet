@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>ИСО 2660</h1>
+    <form method="POST">
+      {% for i, q in enumerate(questions) %}
+      <h2>{{ q['question'] }}</h2>
+      <ul>
+        {% for option in q['options'] %}
+        <li>
+          <label>
+            <input type="radio" name="q{{ i }}" value="{{ option }}"> {{ option }}
+          </label>
+        </li>
+        {% endfor %}
+      </ul>
+      <hr>
+      {% endfor %}
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
